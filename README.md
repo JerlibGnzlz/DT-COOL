@@ -37,14 +37,17 @@ ________________________________________________________________________________
 
 
 ## Endpoint para el inicio de sesion
+
 - `post` http://localhost:3001/register
 
-![registro](https://github.com/JerlibGnzlz/COOL/assets/84889284/e3ee9b75-59b4-4c12-bf12-5ff4d66672d4)
+
+![registro](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/c566b27c-e493-4171-af08-8fd93c2a7448)
 
 
 - `post` http://localhost:3001/login
 
-![login](https://github.com/JerlibGnzlz/COOL/assets/84889284/96df65d7-fc53-4982-b30c-0671e2249e38)
+
+![login](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/9ddd078c-49fb-4d20-bf8e-9c3628a23a0a)
 
 <br><br>
 > El usuario al hacer login le genera un `token` para acceder a la aplicacion.
@@ -56,26 +59,31 @@ ________________________________________________________________________________
 
 - `post` http://localhost:3001/API/travel 
 
-![crearDestino](https://github.com/JerlibGnzlz/COOL/assets/84889284/d7579bd2-b1a6-45b9-abb0-8fc4d38e4224)
+
+![crearDestino](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/568aabc2-fe58-4e2f-9949-202b6ebc8f35)
 
 - `get` http://localhost:3001/API/travel/:id + `token`
 
-![getone](https://github.com/JerlibGnzlz/COOL/assets/84889284/d1d18060-e037-4813-abe2-ac30e36ed859)
+
+![getone](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/e19e763a-31f5-4744-b692-4981cc5e7dc4)
 
 
 - `gets` http://localhost:3001/API/travels
 
 
-![GETALL](https://github.com/JerlibGnzlz/COOL/assets/84889284/4fb27465-5540-43e9-945d-6513bd26e331)
+![GETALL](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/b8c75766-888c-4b76-8ff6-2b444419fc2e)
+
 
 - `put` http://localhost:3001/API/travel/:id + `token`
 
-![UPDATE](https://github.com/JerlibGnzlz/COOL/assets/84889284/287d73d6-f001-4c20-8218-eda6c3841066)
+
+![UPDATE](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/1ddbf827-466b-40ee-ac86-d15e2f807615)
 
 
 - `delete` http://localhost:3001/API/travel/:id + `token`
 
-![DELETE](https://github.com/JerlibGnzlz/COOL/assets/84889284/82652207-db48-4f32-8365-0e8a390aee70)
+
+![DELETE](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/337bf0e2-de4f-4942-bfe3-b4bc1004c79a)
 
 
 ## `Skill Utilizadas`
@@ -102,15 +110,15 @@ ________________________________________________________________________________
 
 > Base de datos
 > 
-   ![image](https://github.com/JerlibGnzlz/COOL/assets/84889284/c9e7251a-e242-4c7d-8513-c0867bc3576e)
+![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/8bf31db9-d8d0-45b0-a206-9cb12d5fe06e)
 
 
 > Para subir las imagenes a la nube
 > 
-   ![image](https://github.com/JerlibGnzlz/COOL/assets/84889284/fc5b7270-6717-4715-a01c-aa78f84913cb)
+   ![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/000a260f-5bde-42de-896d-7fe2600d8e0e)
    
    
-   ![image](https://github.com/JerlibGnzlz/COOL/assets/84889284/a9bae36b-2583-4afb-8217-79ab05c8e139)
+![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/9a998377-bf0c-45b7-9670-9e3f33fe9266)
 
 
 

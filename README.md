@@ -1,17 +1,19 @@
 # Api COOL
 ## :book: Informacion sobre la API destinos turísticos
 
-`La Api consiste en implementar un sistema de registro e inicio de usuario y al ingresar poder crear destinos turisticos`
+`La Api consiste en implementar un sistema de registro e inicio de usuario y al ingresar poder crear destinos turisticos con su nombre descripcion de destino mas una imagen `
 _____________________________________________________________________
 - ## Pasos para hacer la instalacion
  
- 1|clonar el repositorio de GitHub
+ 1|clonar el repositorio de GitHub.
  
- 2|hacer `npm i` para que se instalen todas las dependencias
+ 2|hacer `npm i` para que se instalen todas las dependencias.
  
- 3|scripts para correr la aplicacion: `npm run dev`
+ 3|scripts para correr la aplicacion: `npm run dev`.
  
-  > la base de datos esta en `mongoDB atlas`
+  > la base de datos esta en `mongoDB atlas.
+
+  > las imagenes se almacenan en cloudinary.
    
  
 

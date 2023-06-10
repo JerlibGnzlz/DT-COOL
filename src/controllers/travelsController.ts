@@ -1,4 +1,4 @@
-import { Request, Response, } from 'express';
+import { Request, RequestHandler, Response, } from 'express';
 import { TravelModel } from '../models/travelsModel';
 import cloudinary from 'cloudinary';
 import fs from "fs"
@@ -8,11 +8,13 @@ import { Usermodel } from '../models/UsersModel';
 
 
 
+export const createTravel = async (req: any, res: Response) => {
 
-export const createTravel = async (req: Request, res: Response) => {
 
+    const { name, description, imageURL, public_id } = req.body
 
-    const { name, description, imageURL, public_id, user } = req.body
+    const { user } = req
+
 
     try {
 
@@ -31,8 +33,11 @@ export const createTravel = async (req: Request, res: Response) => {
         if (travel) {
             return res.status(400).json({ msg: "Travel name already exists", travel })
         }
-
         const users = await Usermodel.findOne(user)
+
+        if (!users) {
+            return res.status(400).json({ msg: "user required" })
+        }
 
         const result = await cloudinary.v2.uploader.upload(req.file.path)
 
@@ -42,7 +47,7 @@ export const createTravel = async (req: Request, res: Response) => {
                 description,
                 imageURL: result.url,
                 public_id: result.public_id,
-                user: users?.id
+                user: users.id
             })
         await newTravel.save()
 

@@ -11,7 +11,7 @@ _____________________________________________________________________
  
  3|scripts para correr la aplicacion: `npm run dev`.
  
-  > la base de datos esta en `mongoDB atlas.
+  > la base de datos esta en `mongoDB atlas`.
 
   > las imagenes se almacenan en cloudinary.
    

@@ -1,4 +1,4 @@
-import { sign, verify } from "jsonwebtoken"
+import { JwtPayload, sign, verify } from "jsonwebtoken"
 
 
 
@@ -13,7 +13,7 @@ export const generateToken = (id: string) => {
 
 
 
-export const verifyToken = (jwt: string) => {
+export const verifyToken = (jwt: string): JwtPayload | string => {
     const isOk = verify(jwt, process.env.JWT_SECRET || "password")
     return isOk
 }

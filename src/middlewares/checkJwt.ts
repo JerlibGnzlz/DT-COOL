@@ -16,6 +16,7 @@ export const checkJwt = async (req: any, res: Response, next: NextFunction) => {
         const isCorrect = verifyToken(`${jwt}`) as JwtPayload
 
         if (!isCorrect) {
+
             res.status(401).json({ msg: "Invalid token" })
         } else {
 

@@ -49,6 +49,7 @@ export const createTravel = async (req: any, res: Response) => {
                 public_id: result.public_id,
                 user: users.id
             })
+
         await newTravel.save()
 
         await fs.unlink(req.file.path, (err) => {
@@ -77,7 +78,6 @@ export const getsTravel = async (req: Request, res: Response) => {
         const allTravel = await TravelModel.find()
 
         if (allTravel) {
-
             return res.status(200).json({ msg: "Get all Travel", allTravel })
         }
 

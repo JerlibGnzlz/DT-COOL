@@ -1,0 +1,92 @@
+paths:
+  /API/travel:
+      post:
+         summary: Crear destino 
+         tags:
+          - Travel
+         responses:
+          "200":   
+            description: Destino creado  
+            content:
+            aplication/json:
+         security:
+         - Auth: 
+  /API/travel/{id}:
+    get:
+       summary: Return un destino
+       tags:
+        - Travel
+       parameters:
+        - name : id
+          in: path
+          description: Identificando destino
+       responses:
+         "200":   
+           description: Obtener un destino
+       security:
+        - Auth:
+         
+         
+       
+
+  /API/travels:
+      get:
+         summary: Obtener todos los destinos
+         tags:
+          - Travel
+         responses:
+          "200":   
+            description: Obtener todos los destinos
+
+  /API/travels/{id}:
+   put:
+       summary: Actualizar un destino
+       tags:
+         - Travel
+       parameters:
+        - name : id
+          in: path
+          description: Identificando destino
+       responses:
+         "200":   
+           description: Actualizando el destino
+           content:
+           aplication/json:
+       security:
+        - Auth:
+       
+
+  /API/travel{id}:
+   delete:
+       summary: Eliminar el destino
+       tags:
+         - Travel
+       parameters:
+        - name : id
+          in: path
+          description: Identificando destino
+       responses:
+         "200":   
+           description: Eliminar el destino
+           content:
+           aplication/json:
+       security:
+        - Auth:   
+
+
+
+  components:
+     schemas: 
+       Travel: 
+        type: object    
+        properties: 
+        name: 
+         type: string  
+         email: 
+          type: string
+       password: 
+        type: string
+        example:
+          name: jerlib gonzalez
+          email: jerlibgnzlz@gmail.com
+        password: 1234

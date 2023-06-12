@@ -6,7 +6,6 @@ import { generateToken } from "../utils/Jwt"
 
 
 
-
 export const registerUser = async (req: Request, res: Response) => {
 
     const { name, email, password } = req.body

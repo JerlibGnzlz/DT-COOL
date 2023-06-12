@@ -1,0 +1,57 @@
+paths:          
+   /login:
+      post:
+         summary: Autenticar usuario
+         tags:
+          - User
+         responses:
+          "200":   
+            description: Usuario creado satisfactoriamente
+          "403":   
+              description: Password incorrecto
+          "401":   
+               description: Esta cuenta no esta registrada
+               content:
+                  aplication/json:
+                   schemas:
+                      $ref: "#/components/schemas/User"
+                   example: 
+                       email: jerlibgnzlz@gmail.com
+                       password: 1234     
+
+  
+      components:
+         securitySchemes:
+            Auth:
+                 type: http
+                 scheme: basic
+           
+                     
+            
+/user:
+    post:
+      tags:
+        - User
+      summary: Registrar el usuario
+      description: Usuario logeado.
+      operationId: createUser
+      requestBody:
+        description: Crea un objeto
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+                responses:
+        "400":   
+           description: Ambos campos son requeridos
+        "403":   
+          description: El usuario ya existe
+        "201":   
+             description: Usuario creado
+          

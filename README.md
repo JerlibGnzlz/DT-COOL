@@ -1,4 +1,7 @@
-# Api COOL
+
+![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/42f7f17c-bfd6-479f-84d4-276a8bfad7a8)
+
+
 ## :book: Informacion sobre la API destinos turísticos
 
 `La Api consiste en implementar un sistema de registro e inicio de usuario y al ingresar poder crear destinos turisticos con su nombre descripcion de destino mas una imagen `
@@ -11,9 +14,24 @@ _____________________________________________________________________
  
  3|scripts para correr la aplicacion: `npm run dev`.
  
+ 4|al levantar el servidor podra acceder a este Endpont,
+   donde podra ver documentacion en `swagger` http://localhost:3001/api/document/ 
+   
+![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/8e94ed0c-2792-4efe-ab22-05bb60c9e49f)
+
+
+ 
   > la base de datos esta en `mongoDB atlas`.
 
-  > las imagenes se almacenan en cloudinary.
+![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/8e61d29d-452b-48ef-9e97-3f887e023ef0)
+
+
+  > las imagenes se almacenan en `cloudinary`.
+
+![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/96af00c2-ea4a-418e-95ed-01980dd17d33)
+
+
+  
    
  
 
@@ -110,20 +128,4 @@ ________________________________________________________________________________
     "@types/multer": "^1.4.7",
     "@types/node": "^20.2.5"
 
-> Base de datos
-> 
-![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/8bf31db9-d8d0-45b0-a206-9cb12d5fe06e)
 
-
-> Para subir las imagenes a la nube
-> 
-   ![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/000a260f-5bde-42de-896d-7fe2600d8e0e)
-   
-   
-![image](https://github.com/JerlibGnzlz/DT-COOL/assets/84889284/9a998377-bf0c-45b7-9670-9e3f33fe9266)
-
-
-
-
-
-# DT-COOL
